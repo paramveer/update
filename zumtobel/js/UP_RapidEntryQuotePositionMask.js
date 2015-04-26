@@ -310,6 +310,7 @@ Controller.Zumtobel.Update.QuoteManagement.RapidEntryQuotePositionMask.FormHook 
 
 	function _listSelectChangeToEditMode()
 	{
+                alert("list select change to edit mode");
 		var selectedLine = arguments[1];
 		var lineData = selectedLine.SelectedLineData;
 
@@ -521,6 +522,7 @@ Controller.Zumtobel.Update.QuoteManagement.RapidEntryQuotePositionMask.ClearInpu
 
 Controller.Zumtobel.Update.QuoteManagement.RapidEntryQuotePositionMask.OnPricingButtonClicked = function(msg, param, wnd, addinfo, formControl, el)
 {	
+     alert("clicked on Pricing");
      Controller.Zumtobel.Update.QuoteManagement.RapidEntryQuotePositionMask.Mode = Controller.Zumtobel.Update.QuoteManagement.RapidEntryQuotePositionMask.Enums.Mode.Positions;
 	if(Controller.Zumtobel.Update.QuoteManagement.RapidEntryQuotePositionMask.Mode == Controller.Zumtobel.Update.QuoteManagement.RapidEntryQuotePositionMask.Enums.Mode.Positions)
 	{
